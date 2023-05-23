@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Operador 1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtOp1"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Operador 2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtOp2"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:id="@+id/btnSoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soma"
+        style="?attr/materialButtonOutlinedStyle"/>
+    <Button
+        android:layout_marginTop="16dp"
+        android:id="@+id/btnSubtracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtração"
+        style="?attr/materialButtonOutlinedStyle"/>
+    <Button
+        android:layout_marginTop="16dp"
+        android:id="@+id/btnMultiplicacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiplicação"
+        style="?attr/materialButtonOutlinedStyle"/>
+    <Button
+        android:layout_marginTop="16dp"
+        android:id="@+id/btnDivisao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divisão"
+        style="?attr/materialButtonOutlinedStyle"/>
+</LinearLayout>

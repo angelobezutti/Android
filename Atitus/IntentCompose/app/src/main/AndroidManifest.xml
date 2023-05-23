@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IntentCompose"
+        tools:targetApi="31">
+        <activity
+            android:name=".ExampleThree"
+            android:exported="false"
+            android:label="@string/title_activity_example_three"
+            android:theme="@style/Theme.IntentCompose">
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ExampleTwo"
+            android:exported="false"
+            android:label="@string/title_activity_example_two"
+            android:theme="@style/Theme.IntentCompose" >
+            <intent-filter>
+                <action android:name="CUSTOM_SHOW_IMAGE" />
+                <data
+                    android:mimeType="image/*"
+                    android:scheme="https" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ExampleOne"
+            android:exported="false"
+            android:label="@string/title_activity_example_one"
+            android:theme="@style/Theme.IntentCompose">
+            <intent-filter>
+                <action android:name="QueFaseDuplaGrenal" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.IntentCompose">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
